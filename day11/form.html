@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+
+</head>
+<body>
+<div class="form-panel">
+    <table id="tb" border="0">
+        <tr>
+            <th>FirstName</th>
+            <td colspan="6"><input type="number" name="first_name" id="firstName"/></td>
+        </tr>
+        <tr>
+            <th>LastName</th>
+            <td colspan="6"><input type="number" name="last_name" id="lastName"/></td>
+        </tr>
+        <tr>
+            <th>FullName</th>
+            <td colspan="6"><input type="number" name="full_name" id="fullName"/></td>
+        </tr>
+        <tr>
+            <td>
+                <!--<input type="submit"  name="btn" id="btn" value="Submit"/>-->
+            </td>
+            <td><input type="submit"  name="btn" id="btn0" value="+"/></td>
+            <td><input type="submit"  name="btn" id="btn1" value="-"/></td>
+            <td><input type="submit"  name="btn" id="btn2" value="*"/></td>
+            <td><input type="submit"  name="btn" id="btn3" value="/"/></td>
+            <td><input type="submit"  name="btn" id="btn4" value="%"/></td>
+            <td><input type="submit"  name="btn" id="res" value="C"/></td>
+        </tr>
+    </table>
+</div>
+<script>
+    function demo(firstName, lastName) {
+        //document.write('hello function');
+        var firstName;
+        var lastName;
+        var fullName=firstName+' '+ lastName;
+        document.write(fullName);
+    }
+
+</script>
+<script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

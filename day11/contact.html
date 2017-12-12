@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css" lang="stylesheet" media="all"/>
+    <link rel="stylesheet" href="css/responsive.css" lang="stylesheet" media="all"/>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="form-panel">
+        <form name="calculator">
+            <table id="tb" border="0">
+                <tr>
+                    <th>FirstName</th>
+                    <td colspan="6"><input type="number" name="number" id="firstName"/></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <!--<input type="submit"  name="btn" id="btn" value="Submit"/>-->
+                    </td>
+                    <td><input type="button" name="btn1" id="b01" value="1"/></td>
+                    <td><input type="button" name="btn2" id="b02" value="2"/></td>
+                    <td><input type="button" name="btn3" id="b03" value="3"/></td>
+                    <td><input type="button" name="btn4" id="b04" value="4"/></td>
+                    <td><input type="button" name="btn5" id="b05" value="5"/></td>
+                    <td><input type="button" name="btn6" id="b06" value="6"/></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <!--<input type="submit"  name="btn" id="btn" value="Submit"/>-->
+                    </td>
+                    <td><input type="submit" name="btn" id="equ" value="="/></td>
+                    <td><input type="submit" name="btn" id="btn0" value="+"/></td>
+                    <td><input type="submit" name="btn" id="btn1" value="-"/></td>
+                    <td><input type="submit" name="btn" id="btn2" value="*"/></td>
+                    <td><input type="submit" name="btn" id="btn3" value="/"/></td>
+                    <td><input type="submit" name="btn" id="btn4" value="%"/></td>
+                    <td><input type="submit" name="btn" id="res" value="C"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<!--wrapper-->
+<script>
+    document.querySelectorAll("calculator, number");
+    var btnElement = document.getElementById('b01');
+    btnElement.onclick = function () {
+        var result1 = document.querySelector('#b01').calculator.number.value = '1';
+        //var result2 = document.querySelector('#b01').calculator.number.value = '2';
+        alert(result1);
+
+    }
+
+
+
+</script>
+</body>
+</html>
